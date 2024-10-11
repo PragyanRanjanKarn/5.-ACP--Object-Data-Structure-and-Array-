@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a1 = ["Pragyan", "Milind", "Bilal"];
+        var a2 = ["Mahumad", "Ayman", "Aayansh"];
+
+
+        var i;
+
+        a1 = a1.join("*")
+        document.write(a1 + "<br> <br> <br>")
+        a1 = ["Mahumad", "Ayman", "Aayansh"]
+        for (i = 0; i < a1.length; i++) {
+            document.write(a1[i] + "<br> <hr> <br>");
+        }
+
+        a2.pop()
+        document.write(a2 + "<br> <br> <br> ")
+        a2 = ["Mahumad", "Ayman", "Aayansh"]
+        for (i = 0; i < a1.length; i++) {
+            document.write(a2[i] + "<br> <hr> <br>");
+        }
+
+        function sum(a, b, c) {
+            return a + b + c;
+        }
+        function avg(a, b, c) {
+            var x = sum(a, b, c);
+            return x / 3;
+        }
+        document.write("<br>" + avg(20, 40, 60) + "<br>");
+    </script>
+</body>
+
+</html>
